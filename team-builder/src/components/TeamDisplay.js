@@ -3,9 +3,6 @@ import React from 'react';
 
 // Material UI
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
-import Divider from '@material-ui/core/Divider';
 import Grid from '@material-ui/core/Grid';
 
 // Local 
@@ -27,10 +24,10 @@ const useStyles = makeStyles(theme => ({
 const TeamDisplay = (props) => {
 	return(
 		<Grid container>
-			{props.members.map((member, id) => {
+			{props.members.map(member => {
 				return(
-					<Grid item xs={12}>
-						<TeamMember key={id} member={member}/>
+					<Grid item xs={12} key={member.id}>
+						<TeamMember member={member}/>
 					</Grid>
 				)
 			})}

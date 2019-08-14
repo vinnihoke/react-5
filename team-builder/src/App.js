@@ -25,8 +25,8 @@ const App = () => {
     <CssBaseline />
     <Navbar />
     <Container className="App">
-      <TeamDisplay members={members}/>
       <Form addMember={addMember}/>
+      <TeamDisplay members={members}/>
     </Container>
     </>
   );
