@@ -17,6 +17,9 @@ const useStyles = makeStyles(theme => ({
 	  maxWidth: 700,
 	  margin: `${theme.spacing(1)}px auto`,
 	  padding: theme.spacing(2),
+	  display: 'flex',
+	  justifyContent: 'center',
+	  alignItems: 'center',
 	},
  }));
 

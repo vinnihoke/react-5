@@ -26,12 +26,14 @@ const TeamMember = ({ member }) => {
       <Paper className={classes.paper}>
         <Grid container wrap="nowrap" spacing={2}>
           <Grid item>
-            <Avatar>T</Avatar>
+            <Avatar>
+					{member.name.charAt(0).toUpperCase()}
+				</Avatar>
           </Grid>
           <Grid item xs>
-            <Typography>{member.name}</Typography>
-            <Typography>{member.email}</Typography>
-            <Typography>{member.role}</Typography>
+            <Typography variant="h6">{member.name}</Typography>
+            <Typography variant="subtitle1">{member.email}</Typography>
+            <Typography variant="subtitle2">{member.role}</Typography>
           </Grid>
         </Grid>
       </Paper>
