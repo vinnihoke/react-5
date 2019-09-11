@@ -1,0 +1,10 @@
+.Form {
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+	width: 100%;
+
+	.textField {
+		width: 200px;
+	}
+}
